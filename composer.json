@@ -49,9 +49,6 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "NIXPACKS_BUILD_CMD": [
-            "composer install && php artisan optimize && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force"
         ]
     },
     "extra": {
