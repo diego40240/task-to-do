@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "NIXPACKS_BUILD_CMD": "composer install && yarn && yarn prod && php artisan optimize && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force"
+        "NIXPACKS_BUILD_CMD": "composer install && php artisan optimize && php artisan config:cache && php artisan route:cache && php artisan view:cache && php artisan migrate --force"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.14",
