@@ -50,7 +50,7 @@ class TodosController extends Controller
         $todo = todos::find($todo_id);
         $categoria = categorias::find($categoria_id);
         $categorias = categorias::all();
-        return view("show",["todo"=> $todo, "categorias"=>$categorias, "categoria_id"=>$categoria->id]);
+        return view("show",["todo"=> $todo, "categorias"=>$categorias, "categoria_id"=>$categoria->id, "activo"=> "todos"]);
     }
 
    

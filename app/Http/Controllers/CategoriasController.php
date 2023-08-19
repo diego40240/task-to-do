@@ -48,7 +48,7 @@ class CategoriasController extends Controller
     {
         $categoria = categorias::find($id);
 
-        return view("categoria.show",["categoria"=>$categoria]);
+        return view("categoria.show",["categoria"=>$categoria, "activo"=>"categorias"]);
         
     }
 
